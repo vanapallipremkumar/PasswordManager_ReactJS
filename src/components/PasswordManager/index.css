@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+hr {
+  background-color: #9ba9eb;
+  height: 2px;
+  border: none;
+  border-radius: 2px;
+}
+.background-container {
+  min-height: 100vh;
+  background-color: #9ba9eb;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+}
+.background-container .password-manager-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+.form-page-container {
+  width: 100%;
+  background-color: #5763a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.small-device-password-manager-image {
+  width: 100%;
+}
+.large-device-password-manager-image {
+  width: 50%;
+  max-width: 500px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .form-page-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .small-device-password-manager-image {
+    display: none;
+  }
+  .large-device-password-manager-image {
+    display: block;
+  }
+}
+
+.form-inputs-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  background-color: #454f84;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .form-inputs-container {
+    width: 45%;
+    margin-top: 0;
+  }
+}
+.form-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.input-field-container {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 2px;
+  display: flex;
+}
+.input-field-icon-container {
+  width: 55px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1.5px solid #454f84;
+}
+.input-field-icon-container .input-field-icon {
+  width: 20px;
+}
+.form-input-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.form-input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.submit-button {
+  width: 80px;
+  height: 34px;
+  align-self: flex-end;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #0b69ff;
+}
+
+.passwords-page-container {
+  width: 100%;
+  min-height: 500px;
+  background-color: #5763a5;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .passwords-page-container {
+    padding: 30px 40px;
+  }
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.passwords-count {
+  color: #fff;
+  font-size: 12px;
+  margin: 0 8px;
+  border: 1.5px solid #fff;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.search-bar-container {
+  width: 50%;
+  max-width: 250px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.search-icon-container {
+  width: 55px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1.5px solid #454f84;
+}
+.search-icon {
+  width: 20px;
+}
+.search-input-container {
+  padding: 0 10px;
+}
+.search-input-field {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.check-box-container {
+  display: flex;
+  align-items: center;
+  margin: 14px 0;
+  align-self: flex-end;
+}
+.checkbox-input {
+  zoom: 1.5;
+}
+.checkbox-label {
+  color: #f8fafc;
+  font-size: 14px;
+  margin-left: 6px;
+}
+.count-container {
+  display: flex;
+  align-items: center;
+}
