@@ -33,6 +33,7 @@ hr {
 }
 .small-device-password-manager-image {
   width: 100%;
+  order: -1;
 }
 .large-device-password-manager-image {
   width: 50%;

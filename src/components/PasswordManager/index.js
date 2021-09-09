@@ -78,7 +78,7 @@ class PasswordManger extends Component {
     }
   }
 
-  RenderFormContainer = () => {
+  renderFormContainer = () => {
     const {websiteName, username, password} = this.state
     return (
       <form className="form-inputs-container" onSubmit={this.onSubmitForm}>
@@ -146,12 +146,12 @@ class PasswordManger extends Component {
 
   RenderFormPageContainer = () => (
     <div className="form-page-container">
+      {this.renderFormContainer()}
       <img
         className="small-device-password-manager-image"
         src="https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png"
         alt="password manager"
       />
-      <this.RenderFormContainer />
       <img
         className="large-device-password-manager-image"
         src="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png"
@@ -172,7 +172,7 @@ class PasswordManger extends Component {
           <div className="search-icon-container">
             <img
               className="search-icon"
-              src="https://assets.ccbp.in/frontend/react-js/search-img.png"
+              src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
               alt="search"
             />
           </div>
